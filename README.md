@@ -59,6 +59,10 @@ Commit Records/Requests [ With dialog: Off ]
 
 The webiewer grabs the contents of the `signature_html` text object and displays it in the web viewer using the `data:text/html` protocol. The `Base64Encode` function is used to encode the HTML content as a Base64 string, which is then decoded by the web viewer.
 
+**TIP**
+
+> Since this uses a CDN for the signature_pad library, the user's browser will need internet access. If the environment is offline, you can embed the library's minified code directly into the HTML string.
+
 ## Files
 
 - `signature_html.html`: The core integration file containing HTML, CSS, and JavaScript.
